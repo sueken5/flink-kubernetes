@@ -15,5 +15,6 @@ high-availability.cluster-id: /flink-cluster
 high-availability.zookeeper.quorum: zk-cs:2181
 high-availability.zookeeper.path.root: /flink
 high-availability.jobmanager.port: 6123
+high-availability.zookeeper.storageDir: /data
 zookeeper.sasl.disable: true
 web.submit.enable: false
