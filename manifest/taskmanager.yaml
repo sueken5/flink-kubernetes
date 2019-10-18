@@ -3,7 +3,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: flink-taskmanager
-  namespace: flink
 spec:
   replicas: 2
   selector:
@@ -18,7 +17,8 @@ spec:
     spec:
       containers:
         - name: taskmanager
-          image: flink-kubernetes
+          image: sueken5/flink-kubernetes
+          imagePullPolicy: Always
           ports:
             - containerPort: 6121
               name: data

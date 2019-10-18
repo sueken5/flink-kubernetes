@@ -17,7 +17,8 @@ spec:
     spec:
       containers:
         - name: jobmanager
-          image: flink-kubernetes
+          image: sueken5/flink-kubernetes
+          imagePullPolicy: Always
           args:
             - -c
             - /opt/flink/conf
